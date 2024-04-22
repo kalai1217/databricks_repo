@@ -38,7 +38,3 @@ spark.sql("CREATE DATABASE IF NOT EXISTS Employee_info")
 # COMMAND ----------
 
 write_delta_table(employee_df,"Employee_info","dim_employee","EmployeeID","/silver/Employee_info/dim_employee")
-
-# COMMAND ----------
-
-display(dbutils.fs.ls('dbfs:/FileStore/assignments/assignment_1/source_to_bronze'))
