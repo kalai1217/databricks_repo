@@ -10,11 +10,8 @@ department_path = "dbfs:/FileStore/assignments/assignment_1/resources/Department
 country_path= "dbfs:/FileStore/assignments/assignment_1/resources/Country_Q1.csv"
 
 country_df=read_csv_data(country_path)
-country_df.display()
 department_df=read_csv_data(department_path)
-department_df.display()
 employee_df=read_csv_data(employee_path)
-employee_df.display()
 
 
 # COMMAND ----------
@@ -27,9 +24,9 @@ write_csv_file(employee_df,'dbfs:/FileStore/assignments/assignment_1/source_to_b
 
 # COMMAND ----------
 
-employee_df= change_column_case_to_snake_case(employee_df).display()
-department_df=change_column_case_to_snake_case(department_df).display()
-country_df=change_column_case_to_snake_case(country_df).display()
+employee_df= change_column_case_to_snake_case(employee_df)
+department_df=change_column_case_to_snake_case(department_df)
+country_df=change_column_case_to_snake_case(country_df)
 
 # COMMAND ----------
 
