@@ -44,38 +44,17 @@ department_df = read_with_custom_schema(department_csv_path, department_custom_s
 
 # COMMAND ----------
 
-display(employee_df)
-display(country_df)
-display(department_df)
-
-
-# COMMAND ----------
 
 employee_snake_case_df = change_column_case_to_snake_case(employee_df)
-display(employee_snake_case_df)
-
-
-
 department_snake_case_df = change_column_case_to_snake_case(department_df)
-display(department_snake_case_df)
-
-
-
 country_snake_case_df = change_column_case_to_snake_case(country_df)
-display(country_snake_case_df)
+
 
 # COMMAND ----------
 
 employee_with_date_df = add_current_date(employee_snake_case_df)
-display(employee_with_date_df)
-
-
 department_with_date_df = add_current_date(department_snake_case_df)
-display(department_with_date_df)
-
-
 country_with_date_df = add_current_date(country_snake_case_df)
-display(country_with_date_df)
 
 
 # COMMAND ----------
